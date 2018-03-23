@@ -15,6 +15,8 @@
 		AA6995DA2064A05D00EE2C71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6995D92064A05D00EE2C71 /* main.m */; };
 		AA6995E42064A05D00EE2C71 /* KVCCollentionOperatorsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6995E32064A05D00EE2C71 /* KVCCollentionOperatorsTests.m */; };
 		AA6995EF2064A05D00EE2C71 /* KVCCollentionOperatorsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6995EE2064A05D00EE2C71 /* KVCCollentionOperatorsUITests.m */; };
+		AA6995FE2064BE2800EE2C71 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6995FD2064BE2800EE2C71 /* Person.m */; };
+		AA6996012064DDBA00EE2C71 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6996002064DDBA00EE2C71 /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		AA6995EA2064A05D00EE2C71 /* KVCCollentionOperatorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KVCCollentionOperatorsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6995EE2064A05D00EE2C71 /* KVCCollentionOperatorsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCCollentionOperatorsUITests.m; sourceTree = "<group>"; };
 		AA6995F02064A05D00EE2C71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA6995FC2064BE2800EE2C71 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		AA6995FD2064BE2800EE2C71 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		AA6995FF2064DDBA00EE2C71 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		AA6996002064DDBA00EE2C71 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				AA6995CB2064A05D00EE2C71 /* AppDelegate.m */,
 				AA6995CD2064A05D00EE2C71 /* ViewController.h */,
 				AA6995CE2064A05D00EE2C71 /* ViewController.m */,
+				AA6995FC2064BE2800EE2C71 /* Person.h */,
+				AA6995FD2064BE2800EE2C71 /* Person.m */,
+				AA6995FF2064DDBA00EE2C71 /* Student.h */,
+				AA6996002064DDBA00EE2C71 /* Student.m */,
 				AA6995D02064A05D00EE2C71 /* Main.storyboard */,
 				AA6995D32064A05D00EE2C71 /* Assets.xcassets */,
 				AA6995D52064A05D00EE2C71 /* LaunchScreen.storyboard */,
@@ -199,7 +209,7 @@
 				TargetAttributes = {
 					AA6995C62064A05D00EE2C71 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					AA6995DE2064A05D00EE2C71 = {
 						CreatedOnToolsVersion = 9.2;
@@ -267,6 +277,8 @@
 			files = (
 				AA6995CF2064A05D00EE2C71 /* ViewController.m in Sources */,
 				AA6995DA2064A05D00EE2C71 /* main.m in Sources */,
+				AA6996012064DDBA00EE2C71 /* Student.m in Sources */,
+				AA6995FE2064BE2800EE2C71 /* Person.m in Sources */,
 				AA6995CC2064A05D00EE2C71 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,11 +442,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = KVCCollentionOperators/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.KVCCollentionOperators;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -443,11 +457,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = KVCCollentionOperators/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.KVCCollentionOperators;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
